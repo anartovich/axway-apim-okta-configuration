@@ -1,15 +1,19 @@
----
-
----
-
 # Configure Axway API Management with external OAuth provider
 
-
-​                                                                
-
-[TOC]
-
-
+- [Configure Axway API Management with external OAuth provider](#configure-axway-api-management-with-external-oauth-provider)
+  - [Introduction](#introduction)
+  - [Scenarios](#scenarios)
+  - [External OAuth flow](#external-oauth-flow)
+  - [Okta Endpoints](#okta-endpoints)
+  - [Implementation steps -Scenario 1 (Client Credentials)](#implementation-steps--scenario-1-client-credentials)
+    - [Register your application with Okta](#register-your-application-with-okta)
+    - [Creating Custom Scopes](#creating-custom-scopes)
+    - [Configure Okta Token Information Policy](#configure-okta-token-information-policy)
+    - [APIManager Configuration](#apimanager-configuration)
+    - [Testing](#testing)
+  - [Implementation steps -Scenario 2 (Authorization code)](#implementation-steps--scenario-2-authorization-code)
+    - [Register your application with Okta](#register-your-application-with-okta-1)
+    - [Testing](#testing-1)
 
 ## Introduction
 
@@ -99,7 +103,6 @@ Application is setup now and client credentials are generated.
 
   ![](images/image012.png)
   
-
 - Here is the flow in APIGW which does validate access token.
 
   ![](images/image014.png)
